@@ -65,5 +65,8 @@ def construct_and_reorder(num_nodes=2e7, num_edges=2e8):
     return dur
 
 if __name__ ==  '__main__':
+    times = []
     for _ in range(10):
-        construct_and_reorder()
+        times.append(construct_and_reorder())
+
+    print(f"{np.mean(times[1:]) ± {np.std(times[1:])}}")
