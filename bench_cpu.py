@@ -69,4 +69,4 @@ if __name__ ==  '__main__':
     for _ in range(10):
         times.append(construct_and_reorder())
 
-    print(f"{np.mean(times[1:]) ± {np.std(times[1:])}}")
+    print(f"{np.mean(times[1:]):.2f} ± {np.std(times[1:]):.2f}")
